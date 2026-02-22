@@ -139,18 +139,9 @@ strong { font-weight: 600; }
   display: flex;
   align-items: flex-end;
   padding-block: 4rem;
-
-  /*
-   * TO ADD HERO PHOTO:
-   * Replace the background below with:
-   * background-image: url('hero.jpg');
-   * background-size: cover;
-   * background-position: center top;
-   */
-  background:
-    radial-gradient(ellipse at 65% 30%, rgba(15, 40, 18, 0.7) 0%, transparent 55%),
-    radial-gradient(ellipse at 20% 80%, rgba(10, 26, 12, 0.5) 0%, transparent 45%),
-    var(--bg);
+  background-image: url('hero.jpg');
+  background-size: cover;
+  background-position: top center;
   overflow: hidden;
 }
 
@@ -159,8 +150,9 @@ strong { font-weight: 600; }
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(6, 13, 7, 0.95) 0%,
-    rgba(6, 13, 7, 0.4)  50%,
+    rgba(6, 13, 7, 0.92) 0%,
+    rgba(6, 13, 7, 0.35) 35%,
+    rgba(6, 13, 7, 0.1)  70%,
     transparent          100%
   );
   z-index: 1;
@@ -177,21 +169,7 @@ strong { font-weight: 600; }
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--text-muted);
-  margin-bottom: 0.25rem;
-}
-
-.hero-title {
-  color: var(--accent);
-  line-height: 0.9;
-  margin-bottom: 1rem;
-}
-
-.hero-tagline {
-  font-size: clamp(1rem, 2.5vw, 1.3rem);
-  color: var(--text-muted);
-  max-width: 440px;
-  margin-bottom: 2.5rem;
-  line-height: 1.5;
+  margin-bottom: 1.25rem;
 }
 
 /* ─── ABOUT ──────────────────────────────── */
@@ -481,7 +459,7 @@ strong { font-weight: 600; }
   .container { padding-inline: 1.25rem; }
 
   .acc-price {
-    display: none; /* Price is repeated inside the accordion body implicitly */
+    font-size: 0.7rem; /* Shrink rather than hide */
   }
 
   .badges { gap: 0.35rem; }
