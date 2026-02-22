@@ -132,6 +132,41 @@ strong { font-weight: 600; }
 }
 .text-link:hover { text-decoration: none; }
 
+/* ─── SITE HEADER ────────────────────────── */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, rgba(6,13,7,0.7) 0%, transparent 100%);
+}
+
+.header-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.header-link {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+  transition: color 0.12s ease;
+}
+.header-link:hover { color: var(--accent); }
+
+.header-sep {
+  color: var(--accent);
+  font-size: 0.5rem;
+  opacity: 0.6;
+}
+
 /* ─── HERO ───────────────────────────────── */
 .hero {
   position: relative;
@@ -142,6 +177,8 @@ strong { font-weight: 600; }
   background-image: url('hero.jpg');
   background-size: cover;
   background-position: top center;
+  max-width: 1100px;
+  margin-inline: auto;
   overflow: hidden;
 }
 
@@ -247,6 +284,16 @@ strong { font-weight: 600; }
 .topic-list li::before {
   content: '↳ ';
   color: var(--accent);
+}
+
+/* Accent section heading (e.g. Packages) */
+.section-heading-accent {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  color: var(--accent);
+  margin-bottom: 0;
 }
 
 /* ─── ACCORDION ──────────────────────────── */
@@ -395,46 +442,7 @@ strong { font-weight: 600; }
   margin-block: 1.25rem;
 }
 
-/* ─── FOOTER ─────────────────────────────── */
-.footer {
-  border-top: 1px solid var(--border);
-  padding-block: 3rem;
-  text-align: center;
-}
-
-.footer-name {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.35em;
-  color: var(--accent);
-  margin-bottom: 1.25rem;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.footer-link {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
-  color: var(--text-muted);
-  transition: color 0.12s ease;
-}
-.footer-link:hover { color: var(--accent); }
-
-.footer-sep { color: var(--accent); font-size: 0.55rem; }
-
-.footer-email {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--text-dim);
-}
+/* footer removed */
 
 /* ─── RESPONSIVE ─────────────────────────── */
 @media (max-width: 800px) {
