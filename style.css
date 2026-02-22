@@ -116,7 +116,7 @@ strong { font-weight: 600; }
   font-weight: 500;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: rgba(225, 189, 55, 0.72);
   display: block;
   margin-bottom: 0.5rem;
 }
@@ -178,34 +178,35 @@ strong { font-weight: 600; }
   left: 0;
   right: 0;
   z-index: 100;
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 1rem 1.5rem;
   display: flex;
-  justify-content: center;
-  background: linear-gradient(to bottom, rgba(6,13,7,0.7) 0%, transparent 100%);
+  justify-content: flex-start;
 }
 
 .header-socials {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 1rem;
 }
 
 .header-link {
   font-family: var(--font-mono);
-  font-size: var(--text-sm);
+  font-size: var(--text-md);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   line-height: 1.3;
-  color: rgba(255,255,255,0.55);
-  transition: color 0.12s ease;
+  color: rgba(255,255,255,0.7);
+  transition: color 0.15s ease;
 }
 .header-link:hover { color: var(--accent); }
 
 .header-sep {
   color: var(--accent);
-  font-size: var(--text-2xs);
+  font-size: var(--text-xs);
   line-height: 1;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 /* ─── HERO ───────────────────────────────── */
@@ -216,24 +217,28 @@ strong { font-weight: 600; }
 .hero-split {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 67vh !important;
-  max-height: 67vh !important;
+  height: 67vh;
 }
 
 .hero-left {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 2.5rem 3rem;
+  padding-left: 280px;
+  height: 100%;
   background: var(--bg);
 }
 
 .hero-left-inner {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
   gap: 1.5rem;
+  width: 400px;
+  max-width: 400px;
 }
 
 .hero-right {
@@ -242,11 +247,12 @@ strong { font-weight: 600; }
   display: flex;
   align-items: center;
   justify-content: center;
+  height: fit-content;
 }
 
 .hero-img {
   width: 100%;
-  height: 100%;
+  height: fit-content;
   object-fit: cover;
   object-position: center center;
   display: block;
@@ -546,12 +552,12 @@ strong { font-weight: 600; }
 @media (max-width: 800px) {
   .section { padding-block: 4rem; }
 
-  /* Hero: stack image on top, content below */
+  .hero { height: auto; }
+
   .hero-split {
     grid-template-columns: 1fr;
     grid-template-rows: 45vh auto;
-    min-height: unset;
-    max-height: none;
+    height: auto;
   }
 
   .hero-right { grid-row: 1; }
