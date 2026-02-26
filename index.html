@@ -13,7 +13,7 @@
 <body>
 
   <!-- ═══════════════════════════════════════
-       HEADER — socials at top
+       TOP BAR — socials
   ════════════════════════════════════════ -->
   <header class="site-header">
     <nav class="header-socials" aria-label="Social links">
@@ -26,6 +26,24 @@
   </header>
 
   <!-- ═══════════════════════════════════════
+       MAIN NAV — section links
+  ════════════════════════════════════════ -->
+  <nav class="site-nav" aria-label="Page sections">
+    <div class="site-nav-inner">
+      <a href="#about"      class="nav-link">About</a>
+      <span class="nav-sep" aria-hidden="true">·</span>
+      <a href="#topics"     class="nav-link">Topics I Cover</a>
+      <span class="nav-sep" aria-hidden="true">·</span>
+      <a href="#packages"   class="nav-link">Packages</a>
+      <span class="nav-sep" aria-hidden="true">·</span>
+      <a href="#kind-words" class="nav-link">Kind Words</a>
+      <span class="nav-sep" aria-hidden="true">·</span>
+      <a href="#booking"    class="nav-link">Booking Policy</a>
+      <a href="https://calendly.com/ffinn/dj-3hr" target="_blank" rel="noopener" class="btn btn-nav">Book a Session</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
        HERO
   ════════════════════════════════════════ -->
   <section class="hero" id="top">
@@ -33,9 +51,10 @@
 
       <div class="hero-left">
         <div class="hero-left-inner">
-          <p class="hero-eyebrow">CDJ-Oriented DJ Workshops</p>
+          <!-- Replace logo.webp with the transparent PNG/webp Fiona sends -->
+          <img src="logo.webp" alt="Let's move dancefloors together" class="hero-logo" />
           <h1 class="hero-wordmark">FFINN</h1>
-          <p class="hero-location">Bristol, UK · Pirate Studios · 1-on-1 &amp; Groups</p>
+          <p class="hero-tagline">DJ workshops with FFINN</p>
           <a href="https://calendly.com/ffinn/dj-3hr" target="_blank" rel="noopener" class="btn btn-primary">
             Book a Session
           </a>
@@ -57,13 +76,13 @@
       <div class="about-grid">
 
         <div>
-          <p class="section-label">About FFINN</p>
-          <h2>aka Fiona <span class="muted">(they/she)</span></h2>
-          <div class="badges">
-            <span class="badge">Professional DJ — 10+ years</span>
-            <span class="badge">DJ Tutor — 5 years</span>
-            <span class="badge">Enhanced DBS Checked</span>
-          </div>
+          <h2 class="section-heading-accent">About</h2>
+          <p class="about-name">aka Fiona <span class="muted">(they/she)</span></p>
+          <ul class="info-list">
+            <li>Professional DJ — 10+ years</li>
+            <li>DJ Tutor — 5 years</li>
+            <li>Enhanced DBS Checked</li>
+          </ul>
           <p>My unique skill lies in multi-genre musical journeys which have the ability to soundtrack a variety of environments. I enjoy an eclectic list of genres, including but not limited to: Dubstep/140, DnB/Halftime, Jungle, Juke/Footwork, Garage, Electro, Breaks, House/Techno, Trance, IDM/Electronica, Hip Hop, Post-Rock, Indie, Metal and all kinds of Pop music.</p>
           <p><a href="https://www.mixcloud.com/ffinn/" target="_blank" rel="noopener" class="text-link">Check out my mixes</a> and see if our vibes match :)</p>
         </div>
@@ -141,8 +160,6 @@
         </div>
 
       </div>
-
-      <p class="footnote">Lessons are held in-person at Pirate Studios in Bristol, UK. Prices include studio hire.</p>
     </div>
   </section>
 
@@ -258,15 +275,47 @@
         </div>
 
       </div><!-- /accordion -->
+
+      <p class="footnote">Lessons are held in-person at Pirate Studios in Bristol, UK. Prices include studio hire.</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       KIND WORDS
+  ════════════════════════════════════════ -->
+  <section class="section section-alt" id="kind-words">
+    <div class="container">
+      <p class="section-label">Kind Words</p>
+    </div>
+    <div class="reviews-scroll-outer">
+      <div class="reviews-track">
+        <!-- Replace with real testimonials from Fiona -->
+        <div class="review-card">
+          <p class="review-body">"Placeholder review — Fiona to provide."</p>
+          <p class="review-attr">— Name, context</p>
+        </div>
+        <div class="review-card">
+          <p class="review-body">"Placeholder review — Fiona to provide."</p>
+          <p class="review-attr">— Name, context</p>
+        </div>
+        <div class="review-card">
+          <p class="review-body">"Placeholder review — Fiona to provide."</p>
+          <p class="review-attr">— Name, context</p>
+        </div>
+        <div class="review-card">
+          <p class="review-body">"Placeholder review — Fiona to provide."</p>
+          <p class="review-attr">— Name, context</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ═══════════════════════════════════════
        BOOKING
   ════════════════════════════════════════ -->
-  <section class="section section-alt" id="booking">
+  <section class="section" id="booking">
     <div class="container container-narrow">
-      <p class="section-label">Booking Policy</p>
+      <h2 class="section-heading-accent">Booking Policy</h2>
 
       <ul class="policy-list">
         <li>Sessions available on the hour from <strong>10am–7pm</strong> on <strong>Tuesdays, Fridays, and Saturdays.</strong> Other timings considered — just get in touch.</li>
@@ -286,6 +335,9 @@
       </div>
     </div>
   </section>
+
+  <!-- Back to top -->
+  <button class="back-to-top" aria-label="Back to top" id="backToTop">↑</button>
 
   <script src="main.js"></script>
 </body>
