@@ -284,7 +284,7 @@ strong { font-weight: 600; }
   align-items: center;
   justify-content: center;
   background: var(--bg);
-  padding: 4rem 2rem;
+  padding-block: 4rem;
 }
 
 .hero-center {
@@ -293,7 +293,7 @@ strong { font-weight: 600; }
   align-items: center;
   text-align: center;
   gap: 2rem;
-  max-width: 480px;
+  margin: 0 auto;
 }
 
 .hero-logo {
@@ -681,7 +681,7 @@ strong { font-weight: 600; }
 
   /* Hero + Workshops: same vertical layout on mobile */
   .hero-side {
-    padding: 3rem 1.5rem;
+    padding-block: 3rem;
   }
 
   .hero-center {
