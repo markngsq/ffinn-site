@@ -279,8 +279,6 @@ strong { font-weight: 600; }
   justify-content: center;
   background: var(--bg-alt);
   padding: 4rem 3rem;
-  max-width: 900px;
-  margin: 0 auto;
 }
 
 /* ─── ABOUT ──────────────────────────────── */
