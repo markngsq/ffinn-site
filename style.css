@@ -536,7 +536,7 @@ strong { font-weight: 600; }
 }
 
 .review-card {
-  width: min(340px, 90vw);
+  width: 340px;
   flex-shrink: 0;
   background: var(--bg-raised);
   border: 1px solid var(--border);
@@ -698,6 +698,16 @@ strong { font-weight: 600; }
 
   /* Hide review nav arrows on mobile (use swipe instead) */
   .review-nav { display: none; }
+
+  /* Mobile: single card + peek */
+  .reviews-scroll-outer {
+    padding-inline: 1.5rem;
+  }
+
+  .review-card {
+    width: calc(100vw - 5rem);
+    max-width: 320px;
+  }
 }
 
 @media (max-width: 480px) {
