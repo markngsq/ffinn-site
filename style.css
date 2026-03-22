@@ -163,57 +163,15 @@ strong { font-weight: 600; }
   top: 0;
 }
 
-/* ─── SITE HEADER ────────────────────────── */
-.site-header {
+/* ─── SITE NAV ───────────────────────────── */
+.site-nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 200;
-  padding: 0.6rem 1.5rem;
-  display: flex;
-  justify-content: center;
-  background: rgba(6,13,7,0.92);
+  background: var(--bg);
   border-bottom: 1px solid var(--border);
-  backdrop-filter: blur(8px);
-}
-
-.header-socials {
-  display: flex;
-  align-items: center;
-  gap: 0.85rem;
-}
-
-.header-link {
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.45);
-  transition: color 0.12s ease;
-}
-.header-link:hover { color: var(--accent); }
-.header-link:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 3px;
-}
-
-.header-sep {
-  color: var(--accent);
-  font-size: 0.5rem;
-  opacity: 0.6;
-}
-
-/* ─── SITE NAV ───────────────────────────── */
-.site-nav {
-  position: fixed;
-  top: 37px; /* height of site-header */
-  left: 0;
-  right: 0;
-  z-index: 199;
-  background: rgba(6,13,7,0.95);
-  border-bottom: 1px solid var(--border);
-  backdrop-filter: blur(8px);
 }
 
 .site-nav-inner {
@@ -270,13 +228,13 @@ strong { font-weight: 600; }
 /* Hero + Workshops Split (vertical 50/50) */
 .hero-split-section {
   min-height: 100svh;
-  padding-top: 85px;
+  padding-top: 48px;
 }
 
 .hero-split-grid {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  min-height: calc(100svh - 85px);
+  min-height: calc(100svh - 48px);
 }
 
 .hero-side {
@@ -665,12 +623,24 @@ strong { font-weight: 600; }
 @media (max-width: 800px) {
   .section { padding-block: 4rem; }
 
-  /* Nav: wrap or scroll on mobile */
+  /* Nav: scroll on mobile, hide scrollbar */
+  .site-nav {
+    overflow-x: hidden;
+  }
+  
   .site-nav-inner {
     overflow-x: auto;
+    overflow-y: hidden;
     gap: 0;
     padding-inline: 1rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
   }
+  
+  .site-nav-inner::-webkit-scrollbar {
+    display: none;
+  }
+  
   .nav-sep { display: none; }
   .btn-nav { margin-left: 1rem; }
 
@@ -680,6 +650,10 @@ strong { font-weight: 600; }
   }
 
   /* Hero + Workshops: same vertical layout on mobile */
+  .hero-split-section {
+    padding-top: 48px;
+  }
+
   .hero-side {
     padding-block: 3rem;
   }
