@@ -228,7 +228,7 @@ strong { font-weight: 600; }
 .btn-nav:hover { background: var(--accent); color: #000; }
 
 /* ─── HERO ───────────────────────────────── */
-/* Hero + Workshops Split */
+/* Hero + Workshops Split (vertical 50/50) */
 .hero-split-section {
   min-height: 100svh;
   padding-top: 85px;
@@ -236,7 +236,7 @@ strong { font-weight: 600; }
 
 .hero-split-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   min-height: calc(100svh - 85px);
 }
 
@@ -279,6 +279,8 @@ strong { font-weight: 600; }
   justify-content: center;
   background: var(--bg-alt);
   padding: 4rem 3rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* ─── ABOUT ──────────────────────────────── */
@@ -631,26 +633,16 @@ strong { font-weight: 600; }
   .nav-sep { display: none; }
   .btn-nav { margin-left: 1rem; }
 
-  /* Hero + Workshops: stack on mobile */
-  .hero-split-section {
-    padding-top: 85px;
-  }
-
-  .hero-split-grid {
-    grid-template-columns: 1fr;
-    min-height: unset;
-  }
-
+  /* Hero + Workshops: same vertical layout on mobile */
   .hero-side {
-    padding: 3.5rem 1.5rem;
-    min-height: 70svh;
+    padding: 3rem 1.5rem;
   }
 
   .hero-center {
     gap: 1.5rem;
   }
 
-  .hero-logo { max-width: 300px; }
+  .hero-logo { max-width: 280px; }
   .hero-tagline { font-size: 0.75rem; }
 
   .workshops-side {
