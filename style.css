@@ -623,30 +623,25 @@ strong { font-weight: 600; }
 @media (max-width: 800px) {
   .section { padding-block: 4rem; }
 
-  /* Nav: scroll on mobile, hide scrollbar */
-  .site-nav {
-    overflow-x: hidden;
-  }
-  
+  /* Nav: wrap on mobile */
   .site-nav-inner {
-    overflow-x: auto;
-    overflow-y: hidden;
-    gap: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem 0;
     padding-inline: 1rem;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-  }
-  
-  .site-nav-inner::-webkit-scrollbar {
-    display: none;
+    padding-block: 0.5rem;
   }
   
   .nav-sep { display: none; }
-  .btn-nav { margin-left: 1rem; }
+  .btn-nav { 
+    margin-left: 0;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
 
   /* Larger touch targets on mobile */
   .nav-link {
-    padding: 0.9rem 0.85rem;
+    padding: 0.6rem 0.75rem;
   }
 
   /* Hero + Workshops: same vertical layout on mobile */
