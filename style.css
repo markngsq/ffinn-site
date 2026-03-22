@@ -702,11 +702,13 @@ strong { font-weight: 600; }
   /* Mobile: single card + peek */
   .reviews-scroll-outer {
     padding-inline: 1.5rem;
+    scroll-padding-inline: 1.5rem;
   }
 
   .review-card {
-    width: calc(100vw - 5rem);
-    max-width: 320px;
+    width: calc(100vw - 4rem);
+    max-width: 340px;
+    scroll-snap-align: center;
   }
 }
 
