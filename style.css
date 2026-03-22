@@ -177,11 +177,11 @@ strong { font-weight: 600; }
 .site-nav-inner {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0.75rem 1.5rem;
   display: flex;
   align-items: center;
   gap: 0;
-  height: 48px;
+  min-height: 48px;
 }
 
 .nav-link {
@@ -228,13 +228,13 @@ strong { font-weight: 600; }
 /* Hero + Workshops Split (vertical 50/50) */
 .hero-split-section {
   min-height: 100svh;
-  padding-top: 48px;
+  padding-top: 60px;
 }
 
 .hero-split-grid {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  min-height: calc(100svh - 48px);
+  min-height: calc(100svh - 60px);
 }
 
 .hero-side {
@@ -651,7 +651,7 @@ strong { font-weight: 600; }
 
   /* Hero + Workshops: same vertical layout on mobile */
   .hero-split-section {
-    padding-top: 48px;
+    padding-top: 60px;
   }
 
   .hero-side {
