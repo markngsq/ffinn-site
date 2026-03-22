@@ -696,8 +696,26 @@ strong { font-weight: 600; }
 
   .back-to-top { bottom: 1.25rem; right: 1.25rem; }
 
-  /* Hide review nav arrows on mobile (use swipe instead) */
-  .review-nav { display: none; }
+  /* Mobile: move review nav arrows below */
+  .reviews-container {
+    padding-bottom: 4rem;
+  }
+
+  .review-nav {
+    top: auto;
+    bottom: 0;
+    transform: none;
+  }
+
+  .review-nav-prev {
+    left: 50%;
+    margin-left: -4rem;
+  }
+
+  .review-nav-next {
+    right: 50%;
+    margin-right: -4rem;
+  }
 
   /* Mobile: single card + peek */
   .reviews-scroll-outer {
