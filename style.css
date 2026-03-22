@@ -636,6 +636,7 @@ strong { font-weight: 600; }
   .btn-nav { 
     margin-left: 0;
     width: 100%;
+    max-width: 280px;
     margin-top: 0.5rem;
   }
 
