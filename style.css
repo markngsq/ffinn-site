@@ -231,69 +231,33 @@ strong { font-weight: 600; }
 .hero {
   min-height: 100svh;
   padding-top: 85px; /* site-header + site-nav combined */
-}
-
-.hero-split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: calc(100svh - 85px);
-}
-
-.hero-left {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 3.5rem;
   background: var(--bg);
 }
 
-.hero-left-inner {
+.hero-center {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 1.25rem;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  max-width: 600px;
 }
 
-.hero-right {
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center;
-  display: block;
-}
-
-/* Logo — transparent PNG/webp from Fiona */
+/* Logo — main visual */
 .hero-logo {
-  max-width: 280px;
+  max-width: 480px;
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Hide logo gracefully if file not found */
-.hero-logo[src="logo.webp"]:not([complete]),
-.hero-logo:not([src]) {
-  display: none;
-}
-
-.hero-wordmark {
-  font-size: clamp(4.5rem, 10vw, 7rem);
-  font-weight: 700;
-  letter-spacing: -0.04em;
-  line-height: 0.9;
-  color: var(--text);
-  margin: 0;
-}
-
 .hero-tagline {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--text-muted);
@@ -650,26 +614,14 @@ strong { font-weight: 600; }
   .nav-sep { display: none; }
   .btn-nav { margin-left: 1rem; }
 
-  /* Hero: stack image on top, content below */
-  .hero {
-    padding-top: 85px;
+  /* Hero: smaller logo on mobile */
+  .hero-center {
+    padding: 3rem 1.5rem;
+    gap: 1.5rem;
   }
 
-  .hero-split {
-    grid-template-columns: 1fr;
-    grid-template-rows: 60svh auto;
-    min-height: unset;
-  }
-
-  .hero-right { grid-row: 1; }
-
-  .hero-left {
-    grid-row: 2;
-    padding: 3rem 1.5rem 3.5rem;
-  }
-
-  .hero-wordmark { font-size: clamp(3.5rem, 16vw, 5rem); }
-  .hero-logo { max-width: 200px; }
+  .hero-logo { max-width: 320px; }
+  .hero-tagline { font-size: 0.75rem; }
 
   .about-grid {
     grid-template-columns: 1fr;
