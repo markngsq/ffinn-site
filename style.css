@@ -317,7 +317,7 @@ strong { font-weight: 600; }
   flex-direction: column;
   justify-content: center;
   background: var(--bg-alt);
-  padding: 4rem clamp(3rem, 8vw, 12rem);
+  padding-block: 4rem;
 }
 
 /* ─── ABOUT ──────────────────────────────── */
@@ -692,7 +692,7 @@ strong { font-weight: 600; }
   .hero-tagline { font-size: 0.75rem; }
 
   .workshops-side {
-    padding: 3rem 1.5rem;
+    padding-block: 3rem;
   }
 
   .about-grid {
