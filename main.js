@@ -69,4 +69,20 @@
     });
   }
 
+  // ── Review navigation arrows ─────────────
+  const prevBtn = document.querySelector('.review-nav-prev');
+  const nextBtn = document.querySelector('.review-nav-next');
+  
+  if (prevBtn && nextBtn && reviewsOuter) {
+    const scrollAmount = 360; // card width + gap
+    
+    prevBtn.addEventListener('click', () => {
+      reviewsOuter.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+    
+    nextBtn.addEventListener('click', () => {
+      reviewsOuter.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+  }
+
 })();
