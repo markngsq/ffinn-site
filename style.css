@@ -221,36 +221,15 @@ strong { font-weight: 600; }
 }
 
 .hero-side {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
   background: var(--bg);
-  padding-block: 4rem;
-}
-
-.hero-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 2rem;
-  margin: 0 auto;
 }
 
 .hero-logo {
-  max-width: 420px;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
-}
-
-.hero-tagline {
-  font-family: var(--font-mono);
-  font-size: 0.88rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  margin: 0;
 }
 
 .workshops-side {
@@ -259,6 +238,24 @@ strong { font-weight: 600; }
   justify-content: center;
   background: var(--bg-alt);
   padding-block: 4rem;
+}
+
+.workshop-pill {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border: 1px solid rgba(255,255,255,0.18);
+  padding: 0.3rem 0.75rem;
+  border-radius: 2px;
+  margin-bottom: 1.5rem;
+}
+
+.workshops-cta {
+  margin-top: 1.75rem;
 }
 
 /* ─── ABOUT ──────────────────────────────── */
@@ -717,15 +714,8 @@ strong { font-weight: 600; }
   }
 
   .hero-side {
-    padding-block: 3rem;
+    min-height: 60vw;
   }
-
-  .hero-center {
-    gap: 1.5rem;
-  }
-
-  .hero-logo { max-width: 280px; }
-  .hero-tagline { font-size: 0.75rem; }
 
   .workshops-side {
     padding-block: 3rem;
