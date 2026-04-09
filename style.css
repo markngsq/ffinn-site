@@ -105,9 +105,7 @@ strong { font-weight: 600; }
   font-family: var(--font-mono);
   font-size: 0.72rem;
   color: var(--text-dim);
-  margin-top: 2rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--border);
+  margin-top: 1.5rem;
 }
 
 /* Button */
