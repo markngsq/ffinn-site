@@ -7,6 +7,30 @@
 (function () {
   'use strict';
 
+  // ── Scroll progress bar ──────────────────
+  const progressBar = document.getElementById('scrollProgress');
+  if (progressBar) {
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      progressBar.style.width = (scrolled / total * 100) + '%';
+    }, { passive: true });
+  }
+
+  // ── Scroll reveal ─────────────────────────
+  const revealEls = document.querySelectorAll('.reveal');
+  if (revealEls.length) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    revealEls.forEach(el => observer.observe(el));
+  }
+
   // ── Accordion ────────────────────────────
   document.querySelectorAll('.accordion-body').forEach(body => {
     const inner = document.createElement('div');
