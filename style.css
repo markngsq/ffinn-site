@@ -248,7 +248,7 @@ strong { font-weight: 600; }
 
 .workshops-hero-img {
   width: 100%;
-  height: 30svh;
+  height: 45svh;
   object-fit: cover;
   object-position: center 30%;
   display: block;
