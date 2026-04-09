@@ -237,7 +237,7 @@ strong { font-weight: 600; }
   flex-direction: column;
   justify-content: center;
   background: var(--bg-alt);
-  padding-block: 4rem;
+  padding-bottom: 4rem;
 }
 
 .workshops-hero-img {
