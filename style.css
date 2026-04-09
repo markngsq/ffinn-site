@@ -241,9 +241,9 @@ strong { font-weight: 600; }
 .workshops-side {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   background: var(--bg-alt);
-  padding-bottom: 4rem;
+  padding-block: 4rem;
 }
 
 .workshops-side .container {
