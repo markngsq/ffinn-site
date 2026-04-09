@@ -242,12 +242,11 @@ strong { font-weight: 600; }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: var(--bg-alt);
-  padding-block: 4rem;
+  padding: 4rem 3rem;
 }
 
 .workshops-side .container {
-  padding-top: 0;
+  padding-inline: 0;
 }
 
 .workshop-pill {
@@ -257,8 +256,8 @@ strong { font-weight: 600; }
   font-weight: 500;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--text-muted);
-  border: 1px solid rgba(255,255,255,0.18);
+  color: var(--accent);
+  border: 1px solid var(--accent);
   padding: 0.3rem 0.75rem;
   border-radius: 2px;
   margin-bottom: 1.5rem;
