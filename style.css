@@ -272,12 +272,12 @@ strong { font-weight: 600; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: start;
+  align-items: stretch;
 }
 
 .about-photo {
   width: 100%;
-  aspect-ratio: 3 / 4;
+  height: 100%;
   object-fit: cover;
   object-position: center top;
   display: block;
@@ -735,6 +735,11 @@ strong { font-weight: 600; }
   .about-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
+  }
+
+  .about-photo {
+    order: -1;
+    height: 60vw;
   }
 
   .acc-price { font-size: 0.75rem; }
