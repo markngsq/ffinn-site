@@ -682,14 +682,6 @@ strong { font-weight: 600; }
 }
 
 /* ─── CALENDLY EMBED ─────────────────────── */
-.calendly-wrap {
-  margin-top: 3rem;
-}
-
-.calendly-inline-widget {
-  min-width: 320px;
-  width: 100%;
-}
 
 /* footer removed */
 
