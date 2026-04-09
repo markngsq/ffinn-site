@@ -265,6 +265,8 @@ strong { font-weight: 600; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: calc(100svh - 60px);
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .hero-side {
