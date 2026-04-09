@@ -246,16 +246,6 @@ strong { font-weight: 600; }
   padding-bottom: 4rem;
 }
 
-.workshops-hero-img {
-  width: 100%;
-  height: 45svh;
-  object-fit: cover;
-  object-position: center 30%;
-  display: block;
-  flex-shrink: 0;
-  margin-bottom: 1.5rem;
-}
-
 .workshops-side .container {
   padding-top: 0;
 }
@@ -281,8 +271,17 @@ strong { font-weight: 600; }
 /* ─── ABOUT ──────────────────────────────── */
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  max-width: 740px;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
 
 .about-grid .section-heading-accent { margin-bottom: 0.35rem; }
