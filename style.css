@@ -41,7 +41,7 @@ body::before {
   inset: 0;
   background: #888;
   filter: url(#noiseFilter);
-  opacity: 0.08;
+  opacity: 0.11;
   pointer-events: none;
   z-index: 9000;
 }
