@@ -7,15 +7,6 @@
 (function () {
   'use strict';
 
-  // ── Grain animation ─────────────────────
-  const turbulence = document.querySelector('#noiseFilter feTurbulence');
-  if (turbulence) {
-    let seed = 0;
-    setInterval(() => {
-      turbulence.setAttribute('seed', seed++ % 200);
-    }, 120);
-  }
-
   // ── Accordion ────────────────────────────
   document.querySelectorAll('.accordion-body').forEach(body => {
     const inner = document.createElement('div');
