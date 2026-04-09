@@ -739,7 +739,8 @@ strong { font-weight: 600; }
 
   .about-photo {
     order: -1;
-    height: 60vw;
+    height: 80vw;
+    object-position: center center;
   }
 
   .acc-price { font-size: 0.75rem; }
