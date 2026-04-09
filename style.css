@@ -689,6 +689,7 @@ strong { font-weight: 600; }
 
 .calendly-inline-widget {
   min-width: 320px;
+  width: 100%;
 }
 
 /* footer removed */
