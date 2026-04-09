@@ -241,18 +241,23 @@ strong { font-weight: 600; }
 .workshops-side {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   background: var(--bg-alt);
   padding-bottom: 4rem;
 }
 
 .workshops-hero-img {
   width: 100%;
-  height: 45%;
+  height: 30svh;
   object-fit: cover;
   object-position: center 30%;
   display: block;
   flex-shrink: 0;
+  margin-bottom: 1.5rem;
+}
+
+.workshops-side .container {
+  padding-top: 0;
 }
 
 .workshop-pill {
