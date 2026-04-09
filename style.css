@@ -539,8 +539,12 @@ strong { font-weight: 600; }
 }
 
 .booking-cta {
-  margin-top: 3rem;
+  margin-top: 2rem;
   text-align: center;
+}
+
+.booking-cta p {
+  margin-top: 2rem;
 }
 
 .or-text {
