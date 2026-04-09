@@ -181,7 +181,6 @@ strong { font-weight: 600; }
   left: 0;
   right: 0;
   z-index: 200;
-  background: var(--bg);
   border-bottom: 1px solid var(--border);
 }
 
