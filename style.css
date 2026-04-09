@@ -238,7 +238,6 @@ strong { font-weight: 600; }
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: var(--bg);
   padding: 4rem 3rem;
 }
 
