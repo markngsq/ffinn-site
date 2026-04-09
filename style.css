@@ -729,11 +729,11 @@ strong { font-weight: 600; }
 
   .hero-side {
     min-height: 60vw;
-    padding: 2rem;
+    padding: 4rem 1.5rem;
   }
 
   .workshops-side {
-    padding-block: 3rem;
+    padding: 4rem 1.5rem;
   }
 
   .about-grid {
