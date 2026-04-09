@@ -50,7 +50,7 @@ body::before {
   inset: -10%;
   width: 120%;
   height: 120%;
-  background: #888;
+  background: #333;
   filter: url(#noiseFilter);
   opacity: 0.09;
   pointer-events: none;
