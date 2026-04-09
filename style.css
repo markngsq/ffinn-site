@@ -684,7 +684,6 @@ strong { font-weight: 600; }
 /* ─── CALENDLY EMBED ─────────────────────── */
 .calendly-wrap {
   margin-top: 3rem;
-  border-top: 1px solid var(--border);
 }
 
 .calendly-inline-widget {
