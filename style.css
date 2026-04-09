@@ -218,7 +218,7 @@ strong { font-weight: 600; }
 
 .hero-split-grid {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   min-height: calc(100svh - 60px);
 }
 
@@ -266,8 +266,8 @@ strong { font-weight: 600; }
 /* ─── ABOUT ──────────────────────────────── */
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5rem;
+  grid-template-columns: 1fr;
+  max-width: 740px;
 }
 
 .about-grid .section-heading-accent { margin-bottom: 0.35rem; }
@@ -280,6 +280,38 @@ strong { font-weight: 600; }
 }
 
 .about-name .muted { font-size: 0.95rem; }
+
+/* Social icon row */
+.about-social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin: 0.75rem 0 1.5rem;
+}
+
+.social-icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  transition: color 0.12s ease;
+}
+
+.social-icon-link:hover { color: var(--accent); }
+.social-icon-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.social-icon-link svg {
+  flex-shrink: 0;
+  display: block;
+}
 
 .about-grid > div > p {
   color: rgba(255,255,255,0.72);
@@ -634,6 +666,16 @@ strong { font-weight: 600; }
   border-color: var(--accent);
 }
 
+/* ─── CALENDLY EMBED ─────────────────────── */
+.calendly-wrap {
+  margin-top: 3rem;
+  border-top: 1px solid var(--border);
+}
+
+.calendly-inline-widget {
+  min-width: 320px;
+}
+
 /* footer removed */
 
 /* ─── MOTION PREFERENCES ─────────────────── */
@@ -667,9 +709,13 @@ strong { font-weight: 600; }
     padding: 0.6rem 0.75rem;
   }
 
-  /* Hero + Workshops: same vertical layout on mobile */
+  /* Hero + Workshops: stack on mobile */
   .hero-split-section {
     padding-top: 60px;
+  }
+
+  .hero-split-grid {
+    grid-template-columns: 1fr;
   }
 
   .hero-side {
