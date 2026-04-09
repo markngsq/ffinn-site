@@ -81,9 +81,7 @@ body {
 body::before {
   content: '';
   position: fixed;
-  inset: -10%;
-  width: 120%;
-  height: 120%;
+  inset: -20%;
   background: #111;
   filter: url(#noiseFilter);
   opacity: 0.13;
@@ -778,7 +776,7 @@ strong { font-weight: 600; }
 
   .hero-side {
     min-height: 60vw;
-    padding: 4rem 1.5rem;
+    padding: 3rem 1.5rem 1.5rem;
   }
 
   .workshops-side {
