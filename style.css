@@ -263,7 +263,7 @@ strong { font-weight: 600; }
 
 .hero-split-grid {
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 1fr 1fr;
   min-height: calc(100svh - 60px);
 }
 
@@ -276,7 +276,7 @@ strong { font-weight: 600; }
 }
 
 .hero-logo {
-  max-width: 75%;
+  max-width: fit-content;
   max-height: 100%;
   width: 75%;
   height: auto;
