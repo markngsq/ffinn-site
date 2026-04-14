@@ -108,8 +108,18 @@
 
     .links a:hover { color: var(--accent); }
 
+    .links .icon { display: none; }
+
     .sep {
       color: rgba(255, 255, 255, 0.15);
+    }
+
+    @media (max-width: 600px) {
+      .links { gap: 1.5rem; }
+      .links .icon { display: block; width: 22px; height: 22px; }
+      .links .label { display: none; }
+      .links .sep { display: none; }
+      .links a { font-size: 0; color: var(--text-muted); }
     }
   </style>
 </head>
@@ -119,13 +129,25 @@
   <p class="subtitle">Sonic Storyteller & DJ Tutor</p>
   <a href="/letsmove" class="btn-workshops">Let's Move Dancefloors Together</a>
   <div class="links">
-    <a href="https://www.instagram.com/ffinniff/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.instagram.com/ffinniff/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      <span class="label">Instagram</span>
+    </a>
     <span class="sep">·</span>
-    <a href="https://www.mixcloud.com/ffinn/" target="_blank" rel="noopener">Mixcloud</a>
+    <a href="https://www.mixcloud.com/ffinn/" target="_blank" rel="noopener" aria-label="Mixcloud">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+      <span class="label">Mixcloud</span>
+    </a>
     <span class="sep">·</span>
-    <a href="https://soundcloud.com/ffinniff" target="_blank" rel="noopener">SoundCloud</a>
+    <a href="https://soundcloud.com/ffinniff" target="_blank" rel="noopener" aria-label="SoundCloud">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/><path d="M9 20V9"/></svg>
+      <span class="label">SoundCloud</span>
+    </a>
     <span class="sep">·</span>
-    <a href="mailto:ffinniff@gmail.com">Contact</a>
+    <a href="mailto:ffinniff@gmail.com" aria-label="Contact">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+      <span class="label">Contact</span>
+    </a>
   </div>
 
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
