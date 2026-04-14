@@ -20,6 +20,7 @@
 }
 
 /* ─── RESET ──────────────────────────────── */
+html { background: #060D07; }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 /* ─── SELECTION ──────────────────────────── */
