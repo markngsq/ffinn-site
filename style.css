@@ -3,23 +3,6 @@
    Dark green-black, yellow accent, monospace
    ═══════════════════════════════════════════ */
 
-/* ─── FONTS ──────────────────────────────── */
-@font-face {
-  font-family: 'Forma DJR Text';
-  src: url('fonts/FormaDJRText-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Forma DJR Text';
-  src: url('fonts/FormaDJRText-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
 /* ─── TOKENS ─────────────────────────────── */
 :root {
   --bg:          #060D07;
@@ -31,8 +14,9 @@
   --text-muted:  #8CB88E;
   --text-dim:    #3A5A3C;
   --border:      rgba(255, 255, 255, 0.07);
-  --font-sans:   'Forma DJR Text', system-ui, sans-serif;
-  --font-mono:   'Geist Mono', 'Courier New', monospace;
+  --font-body:   'Victor Mono', monospace;
+  --font-heading:'Major Mono Display', monospace;
+  --font-mono:   'Doto', monospace;
 }
 
 /* ─── RESET ──────────────────────────────── */
@@ -79,7 +63,8 @@
 body {
   background: linear-gradient(160deg, #020904 0%, #060D07 45%, #030A05 100%);
   color: var(--text);
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
+  font-weight: 100;
   font-size: 16px;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
@@ -99,8 +84,8 @@ body::before {
 
 /* ─── TYPOGRAPHY ─────────────────────────── */
 h1, h2, h3 {
-  font-family: var(--font-sans);
-  font-weight: 700;
+  font-family: var(--font-heading);
+  font-weight: 400;
   letter-spacing: -0.03em;
   line-height: 1.05;
 }
@@ -112,7 +97,7 @@ p { margin-bottom: 1rem; }
 p:last-child { margin-bottom: 0; }
 a { color: inherit; text-decoration: none; }
 
-strong { font-weight: 600; }
+strong { font-weight: 400; }
 
 /* ─── LAYOUT ─────────────────────────────── */
 .container {
@@ -452,8 +437,9 @@ strong { font-weight: 600; }
 
 /* Accent section heading (e.g. Packages) */
 .section-heading-accent {
+  font-family: var(--font-heading);
   font-size: clamp(1.8rem, 4vw, 2.6rem);
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: -0.03em;
   line-height: 1.05;
   color: var(--accent);
@@ -491,9 +477,9 @@ strong { font-weight: 600; }
 }
 
 .acc-title {
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   font-size: clamp(0.95rem, 2.5vw, 1.15rem);
-  font-weight: 500;
+  font-weight: 400;
   flex: 1;
 }
 

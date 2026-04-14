@@ -3,28 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FFINN — Coming Soon</title>
-  <meta name="description" content="FFINN — DJ, selector, and workshop tutor based in Bristol, UK. Website coming soon." />
-  <meta name="keywords" content="ffinn, bristol dj, dj workshops, dj lessons, pirate studios, lets move dancefloors together" />
+  <title>FFINN — Sonic Storyteller, DJ Tutor</title>
+  <meta name="description" content="FFINN is a queer, Bristol-based multi-genre DJ and tutor, with notable appearances at Shambala Festival and Bang Face Weekender under their belt." />
+  <meta name="keywords" content="bristol, singapore, dj, ffinn, underground, dance, alternative, booty bass, dubstep, dnb, 140, femme, girl, lgbtqia, esea, asian" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Doto:wght@300;400;500&family=Major+Mono+Display&family=Victor+Mono:wght@100;400&display=swap" rel="stylesheet" />
   <style>
-    @font-face {
-      font-family: 'Forma DJR Text';
-      src: url('fonts/FormaDJRText-Regular.woff2') format('woff2');
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Forma DJR Text';
-      src: url('fonts/FormaDJRText-Bold.woff2') format('woff2');
-      font-weight: 700;
-      font-style: normal;
-      font-display: swap;
-    }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     ::selection { background: #E1BD37; color: #000; }
 
@@ -32,14 +17,16 @@
       --bg: #060D07;
       --accent: #E1BD37;
       --text-muted: #8CB88E;
-      --font-sans: 'Forma DJR Text', system-ui, sans-serif;
-      --font-mono: 'Geist Mono', 'Courier New', monospace;
+      --font-body: 'Victor Mono', monospace;
+      --font-heading: 'Major Mono Display', monospace;
+      --font-mono: 'Doto', monospace;
     }
 
     body {
       background: linear-gradient(160deg, #020904 0%, #060D07 45%, #030A05 100%);
       color: #fff;
-      font-family: var(--font-sans);
+      font-family: var(--font-body);
+      font-weight: 100;
       -webkit-font-smoothing: antialiased;
       min-height: 100svh;
       display: flex;
@@ -62,47 +49,31 @@
       z-index: 9000;
     }
 
-    .logo {
-      width: min(280px, 60vw);
-      height: auto;
-      margin-bottom: 2.5rem;
-    }
-
-    .coming-soon {
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      font-weight: 500;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
+    .site-title {
+      font-family: var(--font-heading);
+      font-size: clamp(3.5rem, 12vw, 8rem);
+      font-weight: 400;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
       color: var(--accent);
-      margin-bottom: 2.5rem;
+      margin-bottom: 1rem;
     }
 
-    .links {
-      display: flex;
-      gap: 1.25rem;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .links a {
+    .subtitle {
       font-family: var(--font-mono);
-      font-size: 0.72rem;
-      font-weight: 500;
-      letter-spacing: 0.1em;
+      font-size: 0.78rem;
+      font-weight: 300;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--text-muted);
-      text-decoration: none;
-      transition: color 0.12s ease;
+      margin-bottom: 2.5rem;
     }
-
-    .links a:hover { color: var(--accent); }
 
     .btn-workshops {
       display: inline-block;
       font-family: var(--font-mono);
       font-size: 0.78rem;
-      font-weight: 700;
+      font-weight: 500;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       padding: 0.9rem 2.2rem;
@@ -116,6 +87,26 @@
 
     .btn-workshops:hover { opacity: 0.85; }
 
+    .links {
+      display: flex;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .links a {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.12s ease;
+    }
+
+    .links a:hover { color: var(--accent); }
+
     .sep {
       color: rgba(255, 255, 255, 0.15);
     }
@@ -123,8 +114,8 @@
 </head>
 <body>
 
-  <img src="logo.webp" alt="FFINN" class="logo" />
-  <p class="coming-soon">Coming soon</p>
+  <h1 class="site-title">fFInN</h1>
+  <p class="subtitle">Sonic Storyteller & DJ Tutor</p>
   <a href="/letsmove" class="btn-workshops">DJ Workshops</a>
   <div class="links">
     <a href="https://www.instagram.com/ffinniff/" target="_blank" rel="noopener">Instagram</a>
