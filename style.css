@@ -11,7 +11,7 @@
   --accent:      #E1BD37;
   --accent-dim:  rgba(225, 189, 55, 0.12);
   --text:        #FFFFFF;
-  --text-muted:  #8CB88E;
+  --text-muted:  #A8D4AA;
   --text-dim:    #3A5A3C;
   --border:      rgba(255, 255, 255, 0.07);
   --font-body:   'Victor Mono', monospace;
@@ -116,7 +116,7 @@ strong { font-weight: 400; }
 /* Label */
 .section-label {
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.73rem;
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -127,7 +127,7 @@ strong { font-weight: 400; }
 
 .section-sub {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.83rem;
   color: var(--text-muted);
   margin-top: -0.3rem;
   margin-bottom: 2rem;
@@ -140,7 +140,7 @@ strong { font-weight: 400; }
 /* Footnote */
 .footnote {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.77rem;
   color: var(--text-muted);
   margin-top: 1.5rem;
 }
@@ -186,7 +186,7 @@ strong { font-weight: 400; }
   background: var(--accent);
   color: #000;
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.83rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -224,7 +224,7 @@ strong { font-weight: 400; }
 
 .nav-link {
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.73rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.55);
@@ -292,7 +292,7 @@ strong { font-weight: 400; }
 .workshop-pill {
   display: inline-block;
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.73rem;
   font-weight: 500;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -347,7 +347,7 @@ strong { font-weight: 400; }
   align-items: center;
   gap: 0.4rem;
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.73rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -379,7 +379,7 @@ strong { font-weight: 400; }
 
 .info-list li {
   font-family: var(--font-mono);
-  font-size: 0.82rem;
+  font-size: 0.87rem;
   color: var(--text-muted);
   padding-block: 0.5rem;
   border-bottom: 1px solid var(--border);
@@ -402,7 +402,7 @@ strong { font-weight: 400; }
 
 .topic-group-label {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -418,7 +418,7 @@ strong { font-weight: 400; }
 
 .pill {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.83rem;
   color: rgba(255, 255, 255, 0.75);
   background: var(--bg-raised);
   border: 1px solid var(--border);
@@ -485,7 +485,7 @@ strong { font-weight: 400; }
 
 .acc-price {
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--accent);
   white-space: nowrap;
   flex-shrink: 0;
@@ -496,7 +496,7 @@ strong { font-weight: 400; }
 
 .acc-toggle {
   font-family: var(--font-mono);
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   color: var(--accent);
   width: 1.4rem;
   text-align: center;
@@ -537,7 +537,7 @@ strong { font-weight: 400; }
 
 .accordion-body li {
   font-family: var(--font-mono);
-  font-size: 0.82rem;
+  font-size: 0.87rem;
   color: var(--text-muted);
   padding-block: 0.35rem;
 }
@@ -550,7 +550,7 @@ strong { font-weight: 400; }
 /* Req note */
 .req {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.83rem;
   color: var(--text-muted);
   padding: 0.75rem 1rem;
   border-left: 2px solid var(--accent);
@@ -590,7 +590,7 @@ strong { font-weight: 400; }
 
 .or-text {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.77rem;
   letter-spacing: 0.1em;
   color: var(--text-dim);
   margin-block: 1.25rem;
@@ -648,7 +648,7 @@ strong { font-weight: 400; }
 
 .review-attr {
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.73rem;
   letter-spacing: 0.08em;
   color: var(--accent);
   margin: 0;
