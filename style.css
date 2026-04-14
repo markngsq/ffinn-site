@@ -331,7 +331,7 @@ strong { font-weight: 400; }
 
 .about-name {
   font-family: var(--font-mono);
-  font-size: 0.83rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--text-muted);
   margin-bottom: 1.25rem;
