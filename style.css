@@ -330,9 +330,10 @@ strong { font-weight: 400; }
 .about-grid .section-heading-accent { margin-bottom: 0.35rem; }
 
 .about-name {
-  font-size: 1.1rem;
+  font-family: var(--font-mono);
+  font-size: 0.83rem;
+  font-weight: 600;
   color: var(--text-muted);
-  font-weight: 400;
   margin-bottom: 1.25rem;
 }
 
