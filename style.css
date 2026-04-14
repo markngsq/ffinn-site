@@ -65,7 +65,7 @@ body {
   color: var(--text);
   font-family: var(--font-body);
   font-weight: 100;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
@@ -117,7 +117,7 @@ strong { font-weight: 400; }
 .section-label {
   font-family: var(--font-mono);
   font-size: 0.73rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--accent);
@@ -127,6 +127,7 @@ strong { font-weight: 400; }
 
 .section-sub {
   font-family: var(--font-mono);
+  font-weight: 600;
   font-size: 0.83rem;
   color: var(--text-muted);
   margin-top: -0.3rem;
@@ -140,6 +141,7 @@ strong { font-weight: 400; }
 /* Footnote */
 .footnote {
   font-family: var(--font-mono);
+  font-weight: 600;
   font-size: 0.77rem;
   color: var(--text-muted);
   margin-top: 1.5rem;
@@ -187,7 +189,7 @@ strong { font-weight: 400; }
   color: #000;
   font-family: var(--font-mono);
   font-size: 0.83rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   padding: 0.75rem 1.5rem;
@@ -224,6 +226,7 @@ strong { font-weight: 400; }
 
 .nav-link {
   font-family: var(--font-mono);
+  font-weight: 600;
   font-size: 0.73rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -293,7 +296,7 @@ strong { font-weight: 400; }
   display: inline-block;
   font-family: var(--font-mono);
   font-size: 0.73rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--accent);
@@ -348,7 +351,7 @@ strong { font-weight: 400; }
   gap: 0.4rem;
   font-family: var(--font-mono);
   font-size: 0.73rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-muted);
@@ -379,6 +382,7 @@ strong { font-weight: 400; }
 
 .info-list li {
   font-family: var(--font-mono);
+  font-weight: 600;
   font-size: 0.87rem;
   color: var(--text-muted);
   padding-block: 0.5rem;
@@ -403,7 +407,7 @@ strong { font-weight: 400; }
 .topic-group-label {
   font-family: var(--font-mono);
   font-size: 0.7rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--accent);
@@ -418,8 +422,9 @@ strong { font-weight: 400; }
 
 .pill {
   font-family: var(--font-mono);
+  font-weight: 600;
   font-size: 0.83rem;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.88);
   background: var(--bg-raised);
   border: 1px solid var(--border);
   padding: 0.45rem 0.85rem;
@@ -485,6 +490,7 @@ strong { font-weight: 400; }
 
 .acc-price {
   font-family: var(--font-mono);
+  font-weight: 600;
   font-size: 0.9rem;
   color: var(--accent);
   white-space: nowrap;
@@ -496,6 +502,7 @@ strong { font-weight: 400; }
 
 .acc-toggle {
   font-family: var(--font-mono);
+  font-weight: 600;
   font-size: 1.15rem;
   color: var(--accent);
   width: 1.4rem;
@@ -537,6 +544,7 @@ strong { font-weight: 400; }
 
 .accordion-body li {
   font-family: var(--font-mono);
+  font-weight: 600;
   font-size: 0.87rem;
   color: var(--text-muted);
   padding-block: 0.35rem;
@@ -550,6 +558,7 @@ strong { font-weight: 400; }
 /* Req note */
 .req {
   font-family: var(--font-mono);
+  font-weight: 600;
   font-size: 0.83rem;
   color: var(--text-muted);
   padding: 0.75rem 1rem;
@@ -576,6 +585,7 @@ strong { font-weight: 400; }
 .policy-list li::before {
   content: '→  ';
   font-family: var(--font-mono);
+  font-weight: 600;
   color: var(--accent);
 }
 
@@ -590,6 +600,7 @@ strong { font-weight: 400; }
 
 .or-text {
   font-family: var(--font-mono);
+  font-weight: 600;
   font-size: 0.77rem;
   letter-spacing: 0.1em;
   color: var(--text-dim);
@@ -648,6 +659,7 @@ strong { font-weight: 400; }
 
 .review-attr {
   font-family: var(--font-mono);
+  font-weight: 600;
   font-size: 0.73rem;
   letter-spacing: 0.08em;
   color: var(--accent);
@@ -706,6 +718,7 @@ strong { font-weight: 400; }
   border: 1px solid var(--border);
   color: var(--text-muted);
   font-family: var(--font-mono);
+  font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
   display: flex;
