@@ -156,7 +156,7 @@ strong { font-weight: 600; }
 .footnote {
   font-family: var(--font-mono);
   font-size: 0.72rem;
-  color: var(--text-dim);
+  color: var(--text-muted);
   margin-top: 1.5rem;
 }
 
