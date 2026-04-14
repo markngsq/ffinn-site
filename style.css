@@ -3,6 +3,23 @@
    Dark green-black, yellow accent, monospace
    ═══════════════════════════════════════════ */
 
+/* ─── FONTS ──────────────────────────────── */
+@font-face {
+  font-family: 'Forma DJR Text';
+  src: url('fonts/FormaDJRText-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Forma DJR Text';
+  src: url('fonts/FormaDJRText-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ─── TOKENS ─────────────────────────────── */
 :root {
   --bg:          #060D07;
@@ -14,7 +31,7 @@
   --text-muted:  #8CB88E;
   --text-dim:    #3A5A3C;
   --border:      rgba(255, 255, 255, 0.07);
-  --font-sans:   'Geist', system-ui, sans-serif;
+  --font-sans:   'Forma DJR Text', system-ui, sans-serif;
   --font-mono:   'Geist Mono', 'Courier New', monospace;
 }
 
@@ -68,26 +85,16 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Noise grain overlay */
-@keyframes grain {
-  0%   { transform: translate(0,    0);    }
-  20%  { transform: translate(-4%, 5%);   }
-  40%  { transform: translate(5%,  -4%);  }
-  60%  { transform: translate(-3%, -5%);  }
-  80%  { transform: translate(4%,   3%);  }
-  100% { transform: translate(0,    0);   }
-}
-
+/* Noise grain overlay — static for smooth mobile perf */
 body::before {
   content: '';
   position: fixed;
-  inset: -20%;
+  inset: 0;
   background: #111;
   filter: url(#noiseFilter);
   opacity: 0.13;
   pointer-events: none;
   z-index: 9000;
-  animation: grain 0.6s steps(1) infinite;
 }
 
 /* ─── TYPOGRAPHY ─────────────────────────── */
@@ -325,6 +332,7 @@ strong { font-weight: 600; }
 
 .about-photo {
   width: 100%;
+  min-height: 500px;
   height: 100%;
   object-fit: cover;
   object-position: center top;
@@ -791,7 +799,8 @@ strong { font-weight: 600; }
 
   .about-photo {
     order: -1;
-    height: 80vw;
+    height: 95vw;
+    max-height: 600px;
     object-position: center center;
   }
 
