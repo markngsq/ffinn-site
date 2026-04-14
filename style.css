@@ -457,7 +457,7 @@ strong { font-weight: 600; }
   letter-spacing: -0.03em;
   line-height: 1.05;
   color: var(--accent);
-  margin-bottom: 0;
+  margin-bottom: 1.5rem;
 }
 
 /* ─── ACCORDION ──────────────────────────── */
