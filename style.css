@@ -627,6 +627,15 @@ strong { font-weight: 400; }
   margin-top: 1.25rem;
 }
 
+.hp-field {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .contact-form label {
   display: grid;
   gap: 0.35rem;
@@ -673,6 +682,15 @@ strong { font-weight: 400; }
   font-family: var(--font-mono);
   font-weight: 600;
   font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.contact-status {
+  min-height: 1.2rem;
+  margin-top: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
   color: var(--text-muted);
 }
 

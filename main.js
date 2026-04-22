@@ -109,4 +109,60 @@
     });
   }
 
+  // ── Contact form (Cloudflare function) ───
+  const contactForm = document.getElementById('contactForm');
+  const contactStatus = document.getElementById('contactStatus');
+  const submittedAtField = document.getElementById('submittedAt');
+
+  if (contactForm && contactStatus) {
+    if (submittedAtField) submittedAtField.value = String(Date.now());
+
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(contactForm);
+      const payload = {
+        name: String(formData.get('name') || '').trim(),
+        email: String(formData.get('email') || '').trim(),
+        subject: String(formData.get('subject') || '').trim(),
+        message: String(formData.get('message') || '').trim(),
+        submittedAt: Number(formData.get('submittedAt') || 0),
+        company: String(formData.get('company') || '').trim(),
+      };
+
+      if (!payload.name || !payload.email || !payload.subject || !payload.message) {
+        contactStatus.textContent = 'Please fill in all fields.';
+        return;
+      }
+
+      const submitMs = Date.now() - (payload.submittedAt || Date.now());
+      if (submitMs < 2500) {
+        contactStatus.textContent = 'Please take a moment, then try again.';
+        return;
+      }
+
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
+      contactStatus.textContent = 'Sending...';
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+
+        if (!res.ok) throw new Error('Request failed');
+
+        contactForm.reset();
+        if (submittedAtField) submittedAtField.value = String(Date.now());
+        contactStatus.textContent = 'Thanks, your message was sent.';
+      } catch {
+        contactStatus.textContent = 'Sorry, send failed. Please try again in a minute.';
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
+      }
+    });
+  }
+
 })();
