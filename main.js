@@ -152,13 +152,19 @@
           body: JSON.stringify(payload),
         });
 
-        if (!res.ok) throw new Error('Request failed');
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) {
+          throw new Error(data?.error || `Request failed (${res.status})`);
+        }
 
         contactForm.reset();
         if (submittedAtField) submittedAtField.value = String(Date.now());
         contactStatus.textContent = 'Thanks, your message was sent.';
-      } catch {
-        contactStatus.textContent = 'Sorry, send failed. Please try again in a minute.';
+      } catch (err) {
+        const msg = String(err?.message || 'Request failed');
+        contactStatus.textContent = msg.startsWith('Mail provider error:')
+          ? msg.replace('Mail provider error:', 'Email provider error:').trim()
+          : `Sorry, send failed. ${msg}`;
       } finally {
         if (submitBtn) submitBtn.disabled = false;
       }
