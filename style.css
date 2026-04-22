@@ -627,13 +627,16 @@ strong { font-weight: 400; }
   margin-top: 1.25rem;
 }
 
-.hp-field {
-  position: absolute;
-  left: -10000px;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-  pointer-events: none;
+.contact-form input.hp-field {
+  position: absolute !important;
+  left: -10000px !important;
+  top: auto !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  padding: 0 !important;
+  border: 0 !important;
 }
 
 .contact-form label {
