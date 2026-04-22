@@ -143,6 +143,10 @@ strong { font-weight: 400; }
   display: inline;
 }
 
+.mobile-break-bristol {
+  display: inline;
+}
+
 /* Muted text */
 .muted      { color: var(--text-muted); font-weight: 400; }
 .body-copy  { color: rgba(255,255,255,0.72); line-height: 1.8; }
@@ -950,6 +954,10 @@ strong { font-weight: 400; }
   .pill { font-size: 0.72rem; }
 
   .mobile-break-sep {
+    display: block;
+  }
+
+  .mobile-break-bristol {
     display: block;
   }
 }
