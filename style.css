@@ -613,15 +613,8 @@ strong { font-weight: 400; }
 }
 
 .contact-section {
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--border);
-}
-
-.contact-heading {
-  font-family: var(--font-heading);
-  font-size: clamp(1.2rem, 3vw, 1.6rem);
-  margin-bottom: 0.75rem;
+  margin-top: 1.5rem;
+  max-width: 56rem;
 }
 
 .contact-form {
@@ -682,15 +675,6 @@ strong { font-weight: 400; }
   justify-self: start;
   margin-top: 0.4rem;
 }
-
-.contact-signoff {
-  margin-top: 1rem;
-  font-family: var(--font-mono);
-  font-weight: 600;
-  font-size: 0.78rem;
-  color: var(--text-muted);
-}
-
 .contact-status {
   min-height: 1.2rem;
   margin-top: 0.75rem;
@@ -906,7 +890,7 @@ strong { font-weight: 400; }
   .acc-price { font-size: 0.75rem; }
 
   .contact-section {
-    padding-top: 1.5rem;
+    margin-top: 1.25rem;
   }
 
   .back-to-top { bottom: 1.25rem; right: 1.25rem; }
