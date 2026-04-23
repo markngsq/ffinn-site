@@ -614,9 +614,8 @@ strong { font-weight: 400; }
 
 .contact-section {
   margin-top: 3rem;
-  padding: 2rem;
-  background: var(--bg-raised);
-  border: 1px solid var(--border);
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
 }
 
 .contact-heading {
@@ -907,7 +906,7 @@ strong { font-weight: 400; }
   .acc-price { font-size: 0.75rem; }
 
   .contact-section {
-    padding: 1.5rem;
+    padding-top: 1.5rem;
   }
 
   .back-to-top { bottom: 1.25rem; right: 1.25rem; }
